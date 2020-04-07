@@ -1,82 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Travellog</title>
-  <link rel="icon" href="img/icons/logo1.png" type="image/x-icon">
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,600&display=swap&subset=vietnamese"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/content.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Travellog</title>
+    <!-- add icon link -->
+    <link rel="icon" href="img/icons/logo1.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html"><img src="img/icons/logo2.png" width="24px" alt="logoicon"></a>
-      <a href="index.html">Travellog</a>
-      <div class="dropdown">
-        <button class="dropbtn">Reviews</button>
-        <div class="dropdown-content">
-          <a href="hanoi.html">Ha Noi City</a>
-          <a href="hochiminh.html">Ho Chi Minh City</a>
-          <a href="hue.html">Hue City</a>
-          <a href="danang.html">Da Nang City</a>
+
+    <header>
+        <div class="logoheader">
+            <img src="img/icons/logo2.png" width="24px">
+            <a href="index.html">Travellog</a></div>
+        <nav id="active">
+            <ul>
+                <li><a href="index.html#reviews" id="activelink">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#aboutme">About me</a></li>
+            </ul>
+        </nav>
+        <div class="menu_toggle"><img src="img/icons/sidebar.png" width="24px" onclick="toggle()"></div>
+    </header>
+
+    <main>
+        <div class="mainBox">
+            <h2>Hue City</h2>
+            <img src="img/pics/huecity.jpg">
+            <div class="paras">
+                <h3>#guest1</h3>
+                <p>Have you ever hear? Top Vietnamese fashion designers flaunt their creativity by re-imagining
+                    traditional Ao
+                    Dais. In this
+                    popular show, designers use Vietnamese silk and Hue folk art to create gorgeous traditional wear.
+                    The
+                    elegant combination of modern Ao Dai styles and traditional art is easily one of the top things to
+                    see
+                    during the festival.</p>
+            </div>
+            <div class="paras">
+                <h3>#guest2</h3>
+                <p>The Hue Royal Inspiration performance depicts the history of Vietnam during the 19th century and is
+                    held
+                    inside the ancient citadel. History during this era will be told in a sequence of historical events
+                    that
+                    explore the festival’s 2018 theme, which highlights Hue’s five UNESCO-recognized heritages: Hue
+                    monuments,
+                    Royal Court music, The Nguyen Dynasty woodblocks, Imperial Archives of the Nguyen Dynasty, and
+                    Literature of
+                    Hue Royal Architecture. The story is told through dramatic music and dance and it’s a unique
+                    experience to
+                    see the history of Hue condensed into a (relatively) short, beautiful performance.</p>
+            </div>
+            <div class="paras">
+                <h3>#guest3</h3>
+                <p>If you’re not in the mood to attend a ticketed event, you’ll be hard-pressed to wander Hue’s lovely
+                    streets
+                    without encountering fascinating outdoor art exhibits, installations, and games that inevitably
+                    capture a
+                    bystander’s attention. This year there are human chess games, dragon boat races, colorful displays
+                    (with a
+                    selfie line-up or two), and delicious food stalls decorating the city. It really is a cultural
+                    spectacle
+                    that showcases hundreds of talented Vietnamese artists. There is also a hot air balloon show!</p>
+            </div>
         </div>
-      </div>
-      <a href="about.html">About me</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><img
-          src="img/icons/sidebar.png" width="24px" alt="logoicon"></a>
-    </div>
-  </header>
-  <main>
-    <div class="mainBox">
-      <div class="imgBox">
-        <img src="img/pics/huepic.jpg" width="100%">
-      </div>
-      <div class="contentBox">
-        <div class="titleBox">
-          <h1>Hue City</h1>
+        <a id="scrollback" href="#"><button>&#8593;</button></a>
+    </main>
+
+    <footer>
+        <div class="footer_text">
+            <p>Posted by: Dương Lê Thanh Bình
+                <br>Contact information: <a href="mailto:17520279@gm.uit.edu.vn">
+                    17520279@gm.uit.edu.vn</a>.</p>
         </div>
-        <div class="paras">
-          <h3>#guest1</h3>
-          <p>Have you ever hear? Top Vietnamese fashion designers flaunt their creativity by re-imagining traditional Ao
-            Dais. In this
-            popular show, designers use Vietnamese silk and Hue folk art to create gorgeous traditional wear. The
-            elegant combination of modern Ao Dai styles and traditional art is easily one of the top things to see
-            during the festival.</p>
-        </div>
-        <div class="paras">
-          <h3>#guest2</h3>
-          <p>The Hue Royal Inspiration performance depicts the history of Vietnam during the 19th century and is held
-            inside the ancient citadel. History during this era will be told in a sequence of historical events that
-            explore the festival’s 2018 theme, which highlights Hue’s five UNESCO-recognized heritages: Hue monuments,
-            Royal Court music, The Nguyen Dynasty woodblocks, Imperial Archives of the Nguyen Dynasty, and Literature of
-            Hue Royal Architecture. The story is told through dramatic music and dance and it’s a unique experience to
-            see the history of Hue condensed into a (relatively) short, beautiful performance.</p>
-        </div>
-        <div class="paras">
-          <h3>#guest3</h3>
-          <p>If you’re not in the mood to attend a ticketed event, you’ll be hard-pressed to wander Hue’s lovely streets
-            without encountering fascinating outdoor art exhibits, installations, and games that inevitably capture a
-            bystander’s attention. This year there are human chess games, dragon boat races, colorful displays (with a
-            selfie line-up or two), and delicious food stalls decorating the city. It really is a cultural spectacle
-            that showcases hundreds of talented Vietnamese artists. There is also a hot air balloon show!</p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer_text">
-      <p>Posted by:<strong> Dương Lê Thanh Bình</strong>
-        <br>Contact information: <a href="mailto:17520279@gm.uit.edu.vn">
-          17520279@gm.uit.edu.vn</a>.</p>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

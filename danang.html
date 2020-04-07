@@ -1,82 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Travellog</title>
-  <link rel="icon" href="img/icons/logo1.png" type="image/x-icon">
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,600&display=swap&subset=vietnamese"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/content.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Travellog</title>
+    <!-- add icon link -->
+    <link rel="icon" href="img/icons/logo1.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html"><img src="img/icons/logo2.png" width="24px" alt="logoicon"></a>
-      <a href="index.html">Travellog</a>
-      <div class="dropdown">
-        <button class="dropbtn">Reviews</button>
-        <div class="dropdown-content">
-          <a href="hanoi.html">Ha Noi City</a>
-          <a href="hochiminh.html">Ho Chi Minh City</a>
-          <a href="hue.html">Hue City</a>
-          <a href="danang.html">Da Nang City</a>
+
+    <header>
+        <div class="logoheader">
+            <img src="img/icons/logo2.png" width="24px">
+            <a href="index.html">Travellog</a></div>
+        <nav id="active">
+            <ul>
+                <li><a href="index.html#reviews" id="activelink">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#aboutme">About me</a></li>
+            </ul>
+        </nav>
+        <div class="menu_toggle"><img src="img/icons/sidebar.png" width="24px" onclick="toggle()"></div>
+    </header>
+
+    <main>
+        <div class="mainBox">
+            <h2>Da Nang City</h2>
+            <img src="img/pics/danangpic.jpg">
+            <div class="paras">
+                <h3>#guest1</h3>
+                <p>Recognized as a UNESCO World Heritage site, the My Son Sanctuary is a large cluster of abandoned
+                    Hindu
+                    temples, constructed between the 4th and the 14th centuries A.D. by the Champa civilization. They
+                    are
+                    referred to as the Angkor Wat of Vietnam. The ruins are both enchanting and photogenic, as they are
+                    overgrown with weeds and surrounded by mountains.</p>
+            </div>
+            <div class="paras">
+                <h3>#guest2</h3>
+                <p>Ba Na Hills is a French hill station resort located on a mountain. You will find structures that
+                    resemble
+                    French castles, as well as gorgeous courtyards, cobblestone streets, giant Buddha statues,
+                    underground wine
+                    cellars, Asia’s longest cable car ride, beautiful nature, and sweeping views.</p>
+            </div>
+            <div class="paras">
+                <h3>#guest3</h3>
+                <p>The Marble Mountains are a cluster of five unique conical-shape limestone mountains that are home to
+                    a
+                    labyrinth of tunnels, pagodas, and caves. There are plenty of awesome views of the beautiful Danang
+                    coast
+                    for you to snap photos of.</p>
+            </div>
+            <div class="paras">
+                <h3>#guest4</h3>
+                <p>My Khe Beach has developed a reputation for being one of the most luxurious beaches in Vietnam. Spend
+                    your
+                    time sunbathing or partaking in watersports while snapping some adventurous Instagram shots.
+                </p>
+            </div>
         </div>
-      </div>
-      <a href="about.html">About me</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><img
-          src="img/icons/sidebar.png" width="24px" alt="logoicon"></a>
-    </div>
-  </header>
-  <main>
-    <div class="mainBox">
-      <div class="imgBox">
-        <img src="img/pics/danangpic.jpg" width="100%">
-      </div>
-      <div class="contentBox">
-        <div class="titleBox">
-          <h1>Da Nang City</h1>
+        <a id="scrollback" href="#"><button>&#8593;</button></a>
+    </main>
+
+    <footer>
+        <div class="footer_text">
+            <p>Posted by: Dương Lê Thanh Bình
+                <br>Contact information: <a href="mailto:17520279@gm.uit.edu.vn">
+                    17520279@gm.uit.edu.vn</a>.</p>
         </div>
-        <div class="paras">
-          <h3>#guest1</h3>
-          <p>Recognized as a UNESCO World Heritage site, the My Son Sanctuary is a large cluster of abandoned Hindu
-            temples, constructed between the 4th and the 14th centuries A.D. by the Champa civilization. They are
-            referred to as the Angkor Wat of Vietnam. The ruins are both enchanting and photogenic, as they are
-            overgrown with weeds and surrounded by mountains.</p>
-        </div>
-        <div class="paras">
-          <h3>#guest2</h3>
-          <p>Ba Na Hills is a French hill station resort located on a mountain. You will find structures that resemble
-            French castles, as well as gorgeous courtyards, cobblestone streets, giant Buddha statues, underground wine
-            cellars, Asia’s longest cable car ride, beautiful nature, and sweeping views.</p>
-        </div>
-        <div class="paras">
-          <h3>#guest3</h3>
-          <p>The Marble Mountains are a cluster of five unique conical-shape limestone mountains that are home to a
-            labyrinth of tunnels, pagodas, and caves. There are plenty of awesome views of the beautiful Danang coast
-            for you to snap photos of.</p>
-        </div>
-        <div class="paras">
-          <h3>#guest4</h3>
-          <p>My Khe Beach has developed a reputation for being one of the most luxurious beaches in Vietnam. Spend your
-            time sunbathing or partaking in watersports while snapping some adventurous Instagram shots.
-          </p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer_text">
-      <p>Posted by:<strong> Dương Lê Thanh Bình</strong>
-        <br>Contact information: <a href="mailto:17520279@gm.uit.edu.vn">
-          17520279@gm.uit.edu.vn</a>.</p>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
