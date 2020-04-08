@@ -90,9 +90,9 @@ header nav ul li a:hover {
     header nav {
         position: absolute;
         width: 100%;
-        height: calc(100vh -50px);
+        height: calc(100vh -60px);
         background: #26857d;
-        top: 50px;
+        top: 60px;
         left: -100%;
         transition: 0.3s;
     }
