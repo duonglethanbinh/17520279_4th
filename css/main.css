@@ -23,7 +23,7 @@
 
 .logoheader a {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .logoheader img {
@@ -51,9 +51,10 @@ header nav ul {
 }
 
 header nav ul li a {
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     padding: 0 20px;
+    font-size: 18px;
     color: #fff;
     display: block;
 }
@@ -71,17 +72,20 @@ header nav ul li a:hover {
 .menu_toggle {
     float: right;
     cursor: pointer;
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     display: none;
 }
 
 @media only screen and (max-width: 700px) {
-    header {
-        padding: 0 20px;
+    .active {
+        left: 0;
     }
     .menu_toggle {
         display: block;
+    }
+    header {
+        padding: 0 20px;
     }
     header nav {
         position: absolute;
@@ -91,9 +95,6 @@ header nav ul li a:hover {
         top: 50px;
         left: -100%;
         transition: 0.3s;
-    }
-    .active {
-        left: 0;
     }
     header nav ul {
         display: block;
@@ -107,7 +108,7 @@ header nav ul li a:hover {
 /* main page */
 
 main {
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 10px 0px;
     background-color: #fcdc97;
     display: block;
@@ -145,7 +146,7 @@ footer .footer_text a {
     box-sizing: border-box;
     background-color: #fcdc97;
     text-align: center;
-    padding: 120px 0px;
+    padding: 100px 0px;
 }
 
 .reviews_content h2, .reviews_content p {
@@ -186,7 +187,7 @@ footer .footer_text a {
 
 .about_content {
     text-align: center;
-    margin: 100px;
+    margin: 140px;
 }
 
 .about_content h3 {
@@ -256,7 +257,7 @@ footer .footer_text a {
     margin: 80px;
 }
 
-.contact_content input[type=text], .contact_content select, .contact_content textarea {
+.contact_content input[type=text], .contact_content input[type=email], .contact_content select, .contact_content textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -285,6 +286,7 @@ footer .footer_text a {
     }
     .contact_content img {
         width: 80%;
+        margin: 5px;
     }
 }
 
@@ -311,37 +313,49 @@ footer .footer_text a {
 }
 
 #scrollback button:hover {
-    background-color: #2aa397;
+    background-color: #56aaa2;
 }
 
 #scrollback button:hover {
     color: white;
 }
 
+@media only screen and (max-width: 700px) {
+    #scrollback button {
+        right: 20%;
+        left: 80%;
+    }
+}
+
 /* reviews content sites */
-#activelink{
+
+#activelink {
     background-color: rgb(253, 84, 253);
 }
-.mainBox {
+
+.main_box {
     text-align: center;
 }
 
-.mainBox h2 {
+.main_box h2 {
     font-size: 24px;
     margin: 20px;
 }
-.mainBox .paras {
+
+.main_box .paras {
     font-size: 20px;
-    margin: 20px;
-    padding: 0px 50px;
+    margin: 30px;
+    padding: 10px 50px;
     text-align: left;
+    border-bottom-right-radius: 70px;
     border-bottom: 2px solid #1c6861;
-    box-shadow: 8px 5px #96fff4;
+    border-right: 2px solid #1c6861;
+    box-shadow: 8px 8px #98e7df;
     background-color: white;
 }
-.mainBox img {
+
+.main_box img {
     width: 50%;
     border: 15px solid whitesmoke;
     border-radius: 10px;
 }
-
