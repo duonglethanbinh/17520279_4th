@@ -146,14 +146,26 @@ footer .footer_text a {
     box-sizing: border-box;
     background-color: #fcdc97;
     text-align: center;
-    padding: 100px 0px;
+    padding: 70px 0px;
 }
 
-.reviews_content h2, .reviews_content p {
+.reviews_content h2{
     margin: 10px;
     font-size: 24px;
 }
 
+.reviews_content p {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px white;
+    color: rgb(62, 62, 62);
+}
+.reviews_content h4 {
+    margin: 15px;
+    font-size: 18px;
+    color: rgb(50, 50, 255);
+}
 /* Create four equal columns that floats next to each other */
 
 .reviews_content img {
