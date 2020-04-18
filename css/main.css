@@ -149,7 +149,7 @@ footer .footer_text a {
     padding: 70px 0px;
 }
 
-.reviews_content h2{
+.reviews_content h2 {
     margin: 10px;
     font-size: 24px;
 }
@@ -161,11 +161,13 @@ footer .footer_text a {
     text-shadow: 1px 1px white;
     color: rgb(62, 62, 62);
 }
+
 .reviews_content h4 {
     margin: 15px;
     font-size: 18px;
     color: rgb(50, 50, 255);
 }
+
 /* Create four equal columns that floats next to each other */
 
 .reviews_content img {
